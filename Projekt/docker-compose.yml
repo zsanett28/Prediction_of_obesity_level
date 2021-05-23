@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  jupyter:
+    build: ./jupyter
+    container_name: jupyter
+    user: '0'
+    ports:
+        - '8888:8888'
+    volumes:
+        - ./jupyter:/home/jovyan/work
